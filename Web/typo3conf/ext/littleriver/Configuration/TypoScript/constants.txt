@@ -1,0 +1,29 @@
+plugin.tx_littleriver {
+	view {
+		# cat=plugin.tx_littleriver/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:littleriver/Resources/Private/Templates/
+		# cat=plugin.tx_littleriver/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:littleriver/Resources/Private/Partials/
+		# cat=plugin.tx_littleriver/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:littleriver/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_littleriver//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+module.tx_littleriver {
+	view {
+		# cat=module.tx_littleriver/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:littleriver/Resources/Private/Backend/Templates/
+		# cat=module.tx_littleriver/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:littleriver/Resources/Private/Backend/Partials/
+		# cat=module.tx_littleriver/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:littleriver/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_littleriver//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

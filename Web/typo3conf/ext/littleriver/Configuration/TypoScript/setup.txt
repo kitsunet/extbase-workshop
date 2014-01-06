@@ -1,0 +1,51 @@
+plugin.tx_littleriver {
+	view {
+		templateRootPath = {$plugin.tx_littleriver.view.templateRootPath}
+		partialRootPath = {$plugin.tx_littleriver.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_littleriver.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_littleriver.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_littleriver._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-littleriver table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-littleriver table th {
+		font-weight:bold;
+	}
+
+	.tx-littleriver table td {
+		vertical-align:top;
+	}
+)
+
+ # Module configuration
+module.tx_littleriver {
+	persistence {
+		storagePid = {$module.tx_littleriver.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_littleriver.view.templateRootPath}
+		partialRootPath = {$module.tx_littleriver.view.partialRootPath}
+		layoutRootPath = {$module.tx_littleriver.view.layoutRootPath}
+	}
+}
