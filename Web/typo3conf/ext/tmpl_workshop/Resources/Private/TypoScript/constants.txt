@@ -1,0 +1,15 @@
+base.extkey = tmpl_workshop
+base.resources = typo3conf/ext/tmpl_workshop/Resources/Public
+base.resourcesPrivate = typo3conf/ext/tmpl_workshop/Resources/Private
+
+styles.content.imgtext.colSpace = 10
+styles.content.imgtext.rowSpace = 10
+styles.content.imgtext.textMargin = 10
+styles.content.imgtext.maxWInText = 600
+styles.content.imgtext.maxW = 600
+
+config.sys_language_uid = 0
+config.language = de
+config.locale_all = de_DE.UTF-8
+config.dateFormat = %d. %B %Y
+config.timeFormat = Uhr %H:%M Sek %S
