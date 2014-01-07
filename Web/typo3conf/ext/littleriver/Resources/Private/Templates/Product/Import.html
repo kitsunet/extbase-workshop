@@ -1,0 +1,15 @@
+<f:be.container>
+		<h1>{releaseData.title}</h1>
+		<ul>
+			<f:if condition="{releaseData.tracks}">
+				<f:then>
+					<f:for each="{releaseData.tracks}" as="track" key="key" iteration="trackIteration">
+						<li{f:if(condition: trackIteration.isLast, then: ' class="last"')}>{key}: {track}</li>
+					</f:for>
+				</f:then>
+				<f:else>
+					Keine Tracks!
+				</f:else>
+			</f:if>
+		</ul>
+</f:be.container>

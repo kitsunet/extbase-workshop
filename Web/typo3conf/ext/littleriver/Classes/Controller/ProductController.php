@@ -26,7 +26,7 @@ class ProductController extends ActionController {
 
 	public function importAction() {
 		$releaseData = $this->musicBrainzService->fetchReleaseData('5575df00-ddaf-39c7-a606-6789dc3fb1f2');
-		return '<pre>' . var_export($releaseData, TRUE) . '</pre>';
+		$this->view->assign('releaseData', $releaseData);
 	}
 
 

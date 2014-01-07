@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-	$_EXTKEY,
+	'Kitsunet.' . $_EXTKEY,
 	'List',
 	'List'
 );
@@ -20,8 +20,7 @@ if (TYPO3_MODE === 'BE') {
 		'importer',	// Submodule key
 		'',						// Position
 		array(
-			'Product' => 'import',
-			
+			'Product' => 'import'
 		),
 		array(
 			'access' => 'user,group',
