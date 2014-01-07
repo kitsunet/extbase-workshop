@@ -1,2 +1,7 @@
 Build/Vagrant/.vagrant
 composer.lock
+Web/typo3conf/deprecation*
+Web/typo3conf/ext/extension_builder
+Web/vendor
+Web/typo3temp
+Web/typo3_src
